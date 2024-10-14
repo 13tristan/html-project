@@ -25,11 +25,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px;
-            background-color: #dbdada;
-            /*background-color: rgba(236, 232, 232, 0.5);*/
+            padding: 20px;
+            background-color: #e7e5e5;
         }
-
+        .brand-name{
+            text-decoration: none;
+            color: #615e5e;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            transition: color 0.35s, opacity 0.35s;
+        }
+        .brand-name:hover {
+            color: black;
+            opacity: 0.4;
+        }
         .heading-brand-name {
             display: flex;
             align-items: center;
@@ -38,7 +47,7 @@
         .brand-name {
             font-size: 35px;
             cursor: pointer;
-            margin: 0;
+            margin:auto;
         }
 
         /* Navigation */
@@ -88,32 +97,41 @@
         .intro-heading {
             font-size: 60px;
             margin: 0;
+            margin-bottom: 20px;
         }
 
         .view-services-btn {
+            text-decoration: none;
+            padding: 15px 20px;
             font-size: 15px;
             font-weight: bold;
             background-color: #409292;
             color: #fff;
-            width: 180px;
-            height: 60px;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.5s, opacity 0.2s;
+            border-radius: 8px;
+            transition: background-color 0.5s;
             cursor: pointer;
+            scroll-behavior: smooth;
         }
 
         .view-services-btn:hover {
             background-color: #0d6161;
-            border-style: ridge;
         }
         .intro-description {
             color: white;
             width: auto;
-            height: 500px;
+            height: 500px; /* Fill the height of the parent */
             font-size: 20px;
             background-color: #0d6161;
             border-radius: 20px;
+            padding: 20px; /* Optional: Add some padding for better spacing */
+            box-sizing: border-box; /* Ensures padding is included in height */
+            display: flex; /* Make it a flex container */
+            flex-direction: column; /* Arrange items vertically */
+            justify-content: center; /* Center content vertically */
+
+        }
+        .home-description {
+
         }
         /* Extra margin removal */
         h1 {
@@ -125,10 +143,10 @@
     <div class="home">
         <header class="heading">
             <div class="heading-brand-name">
-                <p class="brand-name">LaundryGo</p>
+                  <a id="home "href="#home" class="brand-name">LaundryGo</a>
             </div>
             <nav class="navigator">
-            <a href="#home" class="button-heading">HOME</a>
+            <a href="#home" id="home" class="button-heading">HOME</a>
             <a href="#product" class="button-heading">PRODUCT</a>
             <a href="#services" class="button-heading">SERVICES</a>
             <a href="#about" class="button-heading">ABOUT US</a>
@@ -140,17 +158,9 @@
             <div class="intro-div">
                 <p class="intro-text">Good laundry, Good day</p>
                 <h1 class="intro-heading">Find your ideal service!</h1>
-                <button class="view-services-btn">VIEW SERVICES</button>
+                <a href="#services" class="view-services-btn">VIEW SERVICES</a>
             </div>
-            <div class="intro-description">
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-                      </p>
-            </div>
+            
       </div>
     </div>
 
