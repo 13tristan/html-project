@@ -31,18 +31,19 @@
                   font-size: 14px;
                   height: 35px;
                   border-radius: 5px;
-                  border-width: 0.1px;
+                  border-width: .1px;
                   border-style: solid;
 
             }
+
              
             .title-text {
                   font-family: Arial, Helvetica, sans-serif;
                   font-size: 15px;
                   font-weight: bold;
-                  margin-bottom: 15px;
-                  margin-top: 0px;
-                  display: block;
+                  margin: 0px;
+                  margin-bottom: 10px;
+                  line-height: 20px;
             }
             .views-text {
                   margin-top: 5px;
@@ -59,10 +60,16 @@
             .thumbnail-row {
                   margin-bottom: 10px;
             }
+            .heading {
+                  display:flex;
+                  justify-content: center;
+            }
       </style>
 </head>
 <body>
-      <input class="search-bar" type="text" placeholder="Search">
+      <div class="heading">
+            <input class="search-bar" type="text" placeholder="Search">
+      </div>
 
       <div class="video-preview">
             <div class="thumbnail-row">
