@@ -4,41 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaundryGo</title>
-
     <style>
-        .button-heading {
-            font-size: small;
-            color: rgb(110, 108, 108);
-            border: none;
-            text-align: center;
-            font-family: sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            cursor: pointer;
-            transition: color 0.30s, opacity 0.30s;
-            margin-right: 35px;
-            transition: color 0.30s;
-            display: inline;
+        /* General styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
             padding: 0;
-            background-color: transparent;
         }
-        .button-heading:hover{
-            color: black;
-            text-decoration: underline;
+
+        .home {
+            background-color: white;
         }
+
+        /* Header section */
         .heading {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 35px;
-            padding-right: 45px;
+            padding: 35px 45px;
+            background-color: #d6d6d6;
         }
 
-        .brand-name {
-            margin: 0;
-            font-size: 35px;
-            font-family: Arial, Helvetica, sans-serif;
-            cursor: pointer;
+        .heading-brand-name {
+            display: flex;
+            align-items: center;
         }
 
         .brand-logo {
@@ -47,91 +36,110 @@
             margin-right: 10px;
         }
 
-        .heading-brand-name {
+        .brand-name {
+            font-size: 35px;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        /* Navigation */
+        .navigator {
             display: flex;
-            align-items: center
         }
-        .intro-div {
-            margin-top: 250px;
-            margin-left: 180px;
-            display: block;
-            width: 800px;
+
+        .button-heading {
+            font-size: 20px;
+            color: #615e5e;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s, opacity 0.3s;
+            margin-right: 35px;
         }
+
+        .button-heading:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* Intro section */
+        .intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 150px);
+        }
+
+
+        .intro-text {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .intro-heading {
+            font-size: 60px;
+            margin: 0;
+        }
+
         .view-services-btn {
             font-size: 15px;
             font-weight: bold;
-            background-color: rgb(64, 146, 146);
-            color:rgb(255, 255, 255);
+            background-color: #409292;
+            color: #fff;
             width: 180px;
             height: 60px;
             border: none;
             border-radius: 5px;
-            transition: opacity .2s;
-            transition: background-color 0.50s;
-        }
-        .view-services-btn:hover {
-            background-color: rgb(13, 97, 97);
-            border-style:ridge;
+            transition: background-color 0.5s, opacity 0.2s;
             cursor: pointer;
         }
-        .home {
-            background-color:white;
+
+        .view-services-btn:hover {
+            background-color: #0d6161;
+            border-style: ridge;
+        }
+
+        /* Extra margin removal */
+        h1 {
+            display: flex; /* Assuming these <h1> tags were placeholders */
         }
     </style>
 </head>
 <body>
-      <div class="home">
-            <div class="heading">
-                  <div class="heading-brand-name">
-                      <img class="brand-logo" src="" alt="">
-                      <p class="brand-name">LaundryGo</p>
-                  </div>
-                  <div class="navigator">
-                      <button class="button-heading"><span class="span-btn">HOME</span></button>
-                      <button class="button-heading"><span class="span-btn">PRODUCT</span></button>
-                      <button class="button-heading"><span class="span-btn">SERVICES</span></button>
-                      <button class="button-heading"><span class="span-btn">ABOUT US</span></button>
-                  </div>
-              </div>
-          
-              <div class="intro">
-          
-                <div class="intro-div">
-                  <p style="font-size: 30px; 
-                      padding: 0px;
-                      display: inline;">Good laundry, Good day</p>
+    <div class="home">
+        <header class="heading">
+            <div class="heading-brand-name">
+                <p class="brand-name">LaundryGo</p>
+            </div>
+            <nav class="navigator">
+                <button class="button-heading">HOME</button>
+                <button class="button-heading">PRODUCT</button>
+                <button class="button-heading">SERVICES</button>
+                <button class="button-heading">ABOUT US</button>
+            </nav>
+        </header>
 
-                      <h1 style="
-                      font-size: 60px; 
-                      margin: 0px;
-                      "class="intro">Find your ideal service!</h1>
-                      <button class="view-services-btn">VIEW SERVICES</button>
-                </div>
-              </div>
-      </div>
+        <section class="intro">
+            <div class="intro-div">
+                <p class="intro-text">Good laundry, Good day</p>
+                <h1 class="intro-heading">Find your ideal service!</h1>
+                <button class="view-services-btn">VIEW SERVICES</button>
+            </div>
+        </section>
+    </div>
 
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1><h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
 </body>
 </html>
