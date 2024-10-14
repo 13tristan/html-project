@@ -10,30 +10,29 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth;
         }
 
         .home {
-            background-color: white;
+            background-image: url("thumbnails/e44981d5-44a9-41aa-bada-1f9e584c6d97.jfif");
+            background-size: cover;  
+            background-position: center; 
         }
 
         /* Header section */
         .heading {
+
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 35px 45px;
-            background-color: #d6d6d6;
+            padding: 25px;
+            background-color: #dbdada;
+            /*background-color: rgba(236, 232, 232, 0.5);*/
         }
 
         .heading-brand-name {
             display: flex;
             align-items: center;
-        }
-
-        .brand-logo {
-            border-radius: 5px;
-            width: 50px;
-            margin-right: 10px;
         }
 
         .brand-name {
@@ -45,9 +44,12 @@
         /* Navigation */
         .navigator {
             display: flex;
+            padding-right: 40px;
+
         }
 
         .button-heading {
+            text-decoration: none;
             font-size: 20px;
             color: #615e5e;
             background-color: transparent;
@@ -66,10 +68,15 @@
 
         /* Intro section */
         .intro {
+            color: white;
             display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 800px 650px;
+            justify-content:left;
             align-items: center;
-            height: calc(100vh - 150px);
+            height: 850px;
+            padding-left: 180px;
+
         }
 
 
@@ -100,7 +107,14 @@
             background-color: #0d6161;
             border-style: ridge;
         }
-
+        .intro-description {
+            color: white;
+            width: auto;
+            height: 500px;
+            font-size: 20px;
+            background-color: #0d6161;
+            border-radius: 20px;
+        }
         /* Extra margin removal */
         h1 {
             display: flex; /* Assuming these <h1> tags were placeholders */
@@ -114,20 +128,30 @@
                 <p class="brand-name">LaundryGo</p>
             </div>
             <nav class="navigator">
-                <button class="button-heading">HOME</button>
-                <button class="button-heading">PRODUCT</button>
-                <button class="button-heading">SERVICES</button>
-                <button class="button-heading">ABOUT US</button>
+            <a href="#home" class="button-heading">HOME</a>
+            <a href="#product" class="button-heading">PRODUCT</a>
+            <a href="#services" class="button-heading">SERVICES</a>
+            <a href="#about" class="button-heading">ABOUT US</a>
+
             </nav>
         </header>
 
-        <section class="intro">
+        <div class="intro">
             <div class="intro-div">
                 <p class="intro-text">Good laundry, Good day</p>
                 <h1 class="intro-heading">Find your ideal service!</h1>
                 <button class="view-services-btn">VIEW SERVICES</button>
             </div>
-        </section>
+            <div class="intro-description">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+            </div>
+      </div>
     </div>
 
     <h1>hello</h1>
@@ -141,5 +165,10 @@
     <h1>hello</h1>
     <h1>hello</h1>
     <h1>hello</h1>
+     <!-- Services Section -->
+     <section id="services" class="services-section">
+      <h2 class="services-heading">Our Services</h2>
+      <!-- Add your service details here -->
+  </section>
 </body>
 </html>
