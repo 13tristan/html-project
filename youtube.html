@@ -10,21 +10,12 @@
                   width: 40px;
                   border-radius: 60px;
             }
-            .icons {
-                  display: inline-block;
-                  margin-right: 10px;
-                  margin-top: 0px;
-                  vertical-align: top;
-            }
-            .video-info {
-                  display: inline-block;
-            }
-            .video-preview {
-                  display: inline-block;
-                  margin-right: 15px;
+            .video-info-grid {
+                  display: grid;
+                  grid-template-columns: 50px 1fr;
             }
             .thumbnail-video {
-                  width: 450px;
+                  width: 100%;
             }
             .search-bar {
                   display: block;
@@ -39,17 +30,16 @@
              
             .title-text {
                   font-family: Arial, Helvetica, sans-serif;
-                  font-size: 15px;
+                  font-size: 20px;
                   font-weight: bold;
                   margin: 0px;
                   margin-bottom: 10px;
-                  line-height: 20px;
             }
             .views-text {
                   margin-top: 5px;
                   margin-bottom: 0px;
                   font-size: 15px;
-                  display: block;
+                  display: inline-block;
             }
             .name-text {
                   margin-top: 0px;
@@ -64,6 +54,17 @@
                   display:flex;
                   justify-content: center;
             }
+            .video-grid {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr ;
+                  column-gap: 20px;
+                  row-gap: 20px;
+            }
+            .video-preview {
+      display: inline-block;
+      max-width: 480px; /* Set a maximum width to limit how much space it takes */ /* Optional: Add padding to make it more compact */
+      margin: 0; /* Remove margins to avoid extra space */
+}
       </style>
 </head>
 <body>
@@ -71,55 +72,81 @@
             <input class="search-bar" type="text" placeholder="Search">
       </div>
 
-      <div class="video-preview">
-            <div class="thumbnail-row">
-                  <img class="thumbnail-video" src="thumbnails/thumbnail-1.webp" alt="thumbnail">
-            </div>
-            <div> 
-                  <div class="icons">
-                        <img class="profile-picture" src="icons/channel-1.jpeg">
-                  </div>
-                  <div class="video-info">
-                        <p class="title-text">
-                              Talking Tech and AI with Google CEO 
-                              Sundar Pichai!
-                              </p>
-                  
-                              <p class="name-text">
-                              Marques Brownlee
-                              </p>
-                  
-                              <p class="views-text">
-                              3.4M views · 6 months ago
-                              </p>
-                        </div>
-            </div>    
-            
-      </div>
+      <div class="video-grid">
 
-      <div class="video-preview">
-            <div class="thumbnail-row">
-                  <img class="thumbnail-video" src="thumbnails/thumbnail-2.webp" alt="thumbnail">
-            </div>
-            <div> 
-                  <div class="icons">
-                        <img class="profile-picture" src="icons/channel-2.jpeg">
+            <div class="video-preview">
+                  <div class="thumbnail-row">
+                        <img class="thumbnail-video" src="thumbnails/thumbnail-1.webp" alt="thumbnail">
                   </div>
-                  <div class="video-info">
-                        <p class="title-text">
-                              Talking Tech and AI with Google CEO 
-                              Sundar Pichai!
-                              </p>
-                  
-                              <p class="name-text">
-                              Marques Brownlee
-                              </p>
-                  
-                              <p class="views-text">
-                              3.4M views · 6 months ago
-                              </p>
+                  <div class="video-info-grid"> 
+                        <div class="icons">
+                              <img class="profile-picture" src="icons/channel-1.jpeg">
                         </div>
-            </div>  
+                        <div class="video-info">
+                              <p class="title-text">
+                                    Talking Tech and AI with Google CEO <br>Pichai!
+                                    </p>
+                        
+                                    <p class="name-text">
+                                    Marques Brownlee
+                                    </p>
+                        
+                                    <p class="views-text">
+                                    3.4M views · 6 months ago
+                                    </p>
+                        </div>
+                  </div>    
+                  
+            </div>
+      
+            <div class="video-preview">
+                  <div class="thumbnail-row">
+                        <img class="thumbnail-video" src="thumbnails/thumbnail-2.webp" alt="thumbnail">
+                  </div>
+                  <div class="video-info-grid"> 
+                        <div class="icons">
+                              <img class="profile-picture" src="icons/channel-2.jpeg">
+                        </div>
+                        <div class="video-info">
+                              <p class="title-text">
+                                    IDK TESTING BRO NIGGAAAAAAAAAAA
+                                    </p>
+                        
+                                    <p class="name-text">
+                                    Marques Brownlee
+                                    </p>
+                        
+                                    <p class="views-text">
+                                    12M  views · 6 months ago
+                                    </p>
+                        </div>
+                  </div>  
+            </div>
+
+            <div class="video-preview">
+                  <div class="thumbnail-row">
+                        <img class="thumbnail-video" src="thumbnails/thumbnail-2.webp" alt="thumbnail">
+                  </div>
+                  <div class="video-info-grid"> 
+                        <div class="icons">
+                              <img class="profile-picture" src="icons/channel-2.jpeg">
+                        </div>
+                        <div class="video-info">
+                              <p class="title-text">
+                                    IDK TESTING BRO NIGGAAAAAAAAAAA
+                                    </p>
+                        
+                                    <p class="name-text">
+                                    Marques Brownlee
+                                    </p>
+                        
+                                    <p class="views-text">
+                                    12M  views · 6 months ago
+                                    </p>
+                        </div>
+                  </div>  
+            </div>
       </div>
+      
 </body>
 </html>
