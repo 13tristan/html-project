@@ -8,8 +8,7 @@
     <style>
         .button-heading {
             font-size: small;
-            background-color: white;
-            color: rgb(110, 109, 109);
+            color: rgb(110, 108, 108);
             border: none;
             text-align: center;
             font-family: sans-serif;
@@ -18,24 +17,15 @@
             cursor: pointer;
             transition: color 0.30s, opacity 0.30s;
             margin-right: 35px;
-            transition: border-bottomstyle 0.15s, color 0.1s;
+            transition: color 0.30s;
             display: inline;
             padding: 0;
+            background-color: transparent;
         }
-
-        .span-btn:hover {
-            border-bottom-style: solid;
-            border-width: 2px;
-        }
-
-        button:hover {
+        .button-heading:hover{
             color: black;
+            text-decoration: underline;
         }
-
-        .navigator {
-            display: flex;
-        }
-
         .heading {
             display: flex;
             justify-content: space-between;
@@ -67,33 +57,58 @@
             display: block;
             width: 800px;
         }
+        .view-services-btn {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: rgb(64, 146, 146);
+            color:rgb(255, 255, 255);
+            width: 180px;
+            height: 60px;
+            border: none;
+            border-radius: 5px;
+            transition: opacity .2s;
+            transition: background-color 0.50s;
+        }
+        .view-services-btn:hover {
+            background-color: rgb(13, 97, 97);
+            border-style:ridge;
+            cursor: pointer;
+        }
+        .home {
+            background-color:white;
+        }
     </style>
 </head>
 <body>
-    <div class="heading">
-        <div class="heading-brand-name">
-            <img class="brand-logo" src="" alt="">
-            <p class="brand-name">LaundryGo</p>
-        </div>
-        <div class="navigator">
-            <button class="button-heading"><span class="span-btn">HOME</span></button>
-            <button class="button-heading"><span class="span-btn">PRODUCT</span></button>
-            <button class="button-heading"><span class="span-btn">SERVICES</span></button>
-            <button class="button-heading"><span class="span-btn">ABOUT US</span></button>
-        </div>
-    </div>
+      <div class="home">
+            <div class="heading">
+                  <div class="heading-brand-name">
+                      <img class="brand-logo" src="" alt="">
+                      <p class="brand-name">LaundryGo</p>
+                  </div>
+                  <div class="navigator">
+                      <button class="button-heading"><span class="span-btn">HOME</span></button>
+                      <button class="button-heading"><span class="span-btn">PRODUCT</span></button>
+                      <button class="button-heading"><span class="span-btn">SERVICES</span></button>
+                      <button class="button-heading"><span class="span-btn">ABOUT US</span></button>
+                  </div>
+              </div>
+          
+              <div class="intro">
+          
+                <div class="intro-div">
+                  <p style="font-size: 30px; 
+                      padding: 0px;
+                      display: inline;">Good laundry, Good day</p>
 
-    <div class="intro">
-
-      <div class="intro-div">
-            <h1 style="
-            font-size: 60px;
-            display: inline;
-            "class="intro">Everybody deserve a fresh clothes</h1>
-            <p style="font-size: 30px; 
-            padding: 0px;">Find your service!</p>
+                      <h1 style="
+                      font-size: 60px; 
+                      margin: 0px;
+                      "class="intro">Find your ideal service!</h1>
+                      <button class="view-services-btn">VIEW SERVICES</button>
+                </div>
+              </div>
       </div>
-    </div>
 
     <h1>a</h1>
     <h1>a</h1>
