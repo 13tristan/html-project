@@ -14,31 +14,35 @@
         }
 
         .home {
-            background-image: url("thumbnails/e44981d5-44a9-41aa-bada-1f9e584c6d97.jfif");
+            background-color: wheat;
             background-size: cover;  
             background-position: center; 
+            height: 1000px;
         }
 
         /* Header section */
-        .heading {
-
-            display: flex;
-            justify-content: space-between;
+        .header {
             align-items: center;
             padding: 20px;
-            background-color: whitesmoke;
-            border-bottom: aqua;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            position: fixed; /* Fixes the header to the top */
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensures it spans the full width */
+            z-index: 1000; /* Makes sure it's above other elements */
+            box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.199); /* Keeps the shadow */
         }
         .brand-name{
             text-decoration: none;
-            color: #615e5e;
+            color: #000000;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
-            transition: color 0.35s, opacity 0.35s;
+            transition: opacity 0.35s;
         }
         .brand-name:hover {
-            color: black;
-            opacity: 0.4;
+            opacity: 0.5;
         }
 
         .brand-name {
@@ -51,7 +55,7 @@
         .navigator {
             display: flex;
             display: grid;
-            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-columns: 120px 150px 150px 150px;
 
         }
 
@@ -73,10 +77,10 @@
 
         /* Intro section */
         .intro {
-            color: white;
+            color: rgb(255, 255, 255);
             display: flex;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 700px;
             justify-content:left;
             align-items: center;
             height: 900px;
@@ -108,6 +112,7 @@
             transition: background-color 0.5s;
             cursor: pointer;
             scroll-behavior: smooth;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
         }
 
         .view-services-btn:hover {
@@ -121,16 +126,67 @@
             background-color: #0d6161;
             border-radius: 20px;
             margin-right: 40px;
-            flex-direction: column; /* Arrange items vertically */
             text-align: center;
+            display: flex;  
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+        }
+
+        .product {
+            height: 1000px;
+            background-color: #409292;
+        }
+
+        .product-description-1 {
+            font-size: 20px;
+            color: whitesmoke;
             display: flex;
             justify-content: center;
+            align-items: center;
+            width: 600px;
+            padding-top: 80px;
+            margin-left: 120px;
         }
+        .product-description-2 {
+            font-size: 20px;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            padding-top: 80px;
+            margin-left: 180px;
+        }
+        .product-image1 img {
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: 180px;
+        border-radius: 10px;
+        transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-image2 img {
+        justify-content: center;
+        margin-top: 50px;
+        border-radius: 10px;
+        transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-image1 img:hover, .product-image2 img:hover {
+            transform: scale(1.03); /* Image zooms on hover */
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .product1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .product2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
     </style>
 </head>
 <body>
     <div class="home">
-        <header class="heading">
+        <header class="header">
             <div class="heading-brand-name">
                   <a href="laundrygo.html" class="brand-name">LaundryGo</a>
             </div>
@@ -149,27 +205,52 @@
                 <h1 class="intro-heading">Find your ideal service!</h1>
                 <a href="#services" class="view-services-btn">VIEW SERVICES</a>
             </div>
-
             <div class="intro-description">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p style="text-align:center;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  Lore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.m ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
         </div>
-
     </div>
 
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
+    <div id="product" class="product">
+            <div class="product1">
+                <div class="product-image1">
+                    <img src="thumbnails/thumbnail-1.webp" alt="">
+                </div>
+                <div class="product-description-1">
+                    <p>I only enjoy window shopping when the windows are transparent.
+                        Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
+                        They decided to plant an orchard of cotton candy.
+                        The old apple revels in its authority.
+                        Everything was going so well until I was accosted by a purple giraffe.
+                        I only enjoy window shopping when the windows are transparent.
+                        Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
+                        They decided to plant an orchard of cotton candy.
+                        The old apple revels in its authority.
+                        Everything was going so well until I was accosted by a purple giraffe.        </p>
+                </div>
+            </div>
+
+            <div class="product2">
+                <div class="product-description-2">
+                    <p>I only enjoy window shopping when the windows are transparent.
+                        Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
+                        They decided to plant an orchard of cotton candy.
+                        The old apple revels in its authority.
+                        Everything was going so well until I was accosted by a purple giraffe.
+                        I only enjoy window shopping when the windows are transparent.
+                        Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
+                        They decided to plant an orchard of cotton candy.
+                        The old apple revels in its authority.
+                        Everything was going so well until I was accosted by a purple giraffe.        </p>
+                </div>
+                <div class="product-image2">
+                    <img src="thumbnails/thumbnail-1.webp" alt="">
+                </div>
+            </div>
+    </div>
+
      <!-- Services Section -->
      <section id="services" class="services-section">
       <h2 class="services-heading">Our Services</h2>
