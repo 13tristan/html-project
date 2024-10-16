@@ -10,11 +10,13 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            scroll-behavior:smooth;
+            scroll-behavior: smooth;
+            color: #333;
+            background-color: #f9f9f9;
         }
 
         .home {
-            background-color: wheat;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("thumbnails/ftuy4.jpg");
             background-size: cover;  
             background-position: center; 
             height: 1000px;
@@ -24,32 +26,27 @@
         .header {
             align-items: center;
             padding: 20px;
-            background-color: white;
+            background-color: #ffffff;
             display: flex;
             display: grid;
             grid-template-columns: 1150px 1fr;
-            position: fixed; /* Fixes the header to the top */
-            top: 0;
-            left: 0;
-            width: 100%; /* Ensures it spans the full width */
-            z-index: 1;
-            box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.199); /* Keeps the shadow */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .brand-name{
+        .brand-name {
             text-decoration: none;
-            color: #409292;
+            color: #2c7a7a;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
             transition: color 0.35s;
         }
         .brand-name:hover {
-            color: #0d6161;
+            color: #1a4747;
         }
 
         .brand-name {
             font-size: 35px;
             cursor: pointer;
-            margin:auto;
+            margin: auto;
         }
 
         /* Navigation */
@@ -57,14 +54,13 @@
             display: flex;
             display: grid;
             grid-template-columns: 120px 150px 150px 150px;
-
         }
 
         .button-heading {
             padding: 5px;
             text-decoration: none;
             font-size: 20px;
-            color: #615e5e;
+            color: #4a4a4a;
             background-color: transparent;
             border: none;
             font-weight: bold;
@@ -73,19 +69,17 @@
         }
 
         .button-heading:hover {
-            color: black;
+            color: #2c7a7a;
         }
 
         /* Intro section */
         .intro {
-            color: rgb(255, 255, 255);
-            display: flex;
+            color: #333;
             display: grid;
-            grid-template-columns: 1fr 700px;
-            justify-content:left;
-            align-items: center;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
             height: 900px;
-
         }
         .intro-div {
             width: 800px;
@@ -94,12 +88,14 @@
         .intro-text {
             font-size: 30px;
             margin: 0;
+            color: #2c7a7a;
         }
 
         .intro-heading {
             font-size: 60px;
             margin: 0;
             margin-bottom: 20px;
+            color: #1a4747;
         }
 
         .view-services-btn {
@@ -107,82 +103,82 @@
             padding: 20px 30px;
             font-size: 15px;
             font-weight: bold;
-            background-color: #409292;
+            background-color: #2c7a7a;
             color: #fff;
             border-radius: 8px;
             transition: background-color 0.5s;
             cursor: pointer;
             scroll-behavior: smooth;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .view-services-btn:hover {
-            background-color: #0d6161;
+            background-color: #1a4747;
         }
         .intro-description {
-            color: white;
+            color: #000000;
             width: 600px;
-            height: 550px; /* Fill the height of the parent */
-            font-size: 20px;
-            background-color: #0d6161;
+            height: 550px;
+            font-size: 30px;
             border-radius: 20px;
             margin-right: 40px;
             text-align: center;
             display: flex;  
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
         }
 
         .product {
             height: 1000px;
-            background-color: #409292;
+            background-color: #ffffff;
         }
 
-        .product-description-1 {
+        .product-description-1, .product-description-2 {
             font-size: 20px;
-            color: whitesmoke;
+            color: #333;
             display: flex;
+            display: grid;
+            grid-template-columns: 1fr ;
             justify-content: center;
             align-items: center;
-            width: 600px;
-            padding-top: 80px;
+            width: 700px;
             margin-left: 120px;
         }
         .product-description-2 {
-            font-size: 20px;
-            color: whitesmoke;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 600px;
-            padding-top: 80px;
             margin-left: 180px;
         }
-        .product-image1 img {
-        justify-content: center;
-        margin-top: 50px;
-        margin-left: 180px;
-        border-radius: 10px;
-        transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+        .product-image1 img, .product-image2 img {
+            justify-content: center;
+            margin-top: 50px;
+            margin-left: 180px;
+            border-radius: 10px;
+            transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
         }
         .product-image2 img {
-        justify-content: center;
-        margin-top: 50px;
-        border-radius: 10px;
-        transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin-left: 0;
         }
         .product-image1 img:hover, .product-image2 img:hover {
             transform: scale(1.03); 
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        .product1 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .product2 {
+        .product1, .product2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
 
+        /* Services Section */
+        .services-section {
+            background-color: #00000052;
+            padding: 50px 0;
+        }
+        .services-heading {
+            text-align: center;
+            color: #ffffff;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
@@ -193,23 +189,21 @@
             </div>
             <nav class="navigator">
             <a href="laundrygo.html" id="home" class="button-heading">HOME</a>
-            <a href="#product" class="button-heading">PRODUCT</a>
+            <a href="#product" class="button-heading">FEATURES</a>
             <a href="#services" class="button-heading">SERVICES</a>
             <a href="#about" class="button-heading">ABOUT US</a>
-
             </nav>
         </header>
 
         <div class="intro">
+            <div class="intro-description">
+                <p>
+                    Welcome to [Project Name], where we are committed to [describe the purpose of your project, e.g., simplifying daily tasks, providing valuable resources, or improving user experiences]. Explore our [services/features] designed to meet your needs and help you [achieve a specific goal or solve a problem]                </p>
+            </div>
             <div class="intro-div">
                 <p class="intro-text">Good laundry, Good day</p>
                 <h1 class="intro-heading">Find your ideal service!</h1>
                 <a href="#services" class="view-services-btn">VIEW SERVICES</a>
-            </div>
-            <div class="intro-description">
-                <p style="text-align:center;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  Lore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.m ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
             </div>
         </div>
     </div>
@@ -220,39 +214,33 @@
                     <img src="thumbnails/thumbnail-1.webp" alt="">
                 </div>
                 <div class="product-description-1">
+                    <div class="product-description-vertical-align">
+                        <h2>We help you, we help Everything</h2>
                     <p>I only enjoy window shopping when the windows are transparent.
                         Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
                         They decided to plant an orchard of cotton candy.
                         The old apple revels in its authority.
-                        Everything was going so well until I was accosted by a purple giraffe.
-                        I only enjoy window shopping when the windows are transparent.
-                        Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
-                        They decided to plant an orchard of cotton candy.
-                        The old apple revels in its authority.
-                        Everything was going so well until I was accosted by a purple giraffe.        </p>
+                        Everything was going so well until I was accosted by a purple giraffe.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="product2">
                 <div class="product-description-2">
+                    <div class="product-description-vertical-align">
+                        <h2>We help you, we help Everything</h2>
                     <p>I only enjoy window shopping when the windows are transparent.
                         Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
                         They decided to plant an orchard of cotton candy.
                         The old apple revels in its authority.
-                        Everything was going so well until I was accosted by a purple giraffe.
-                        I only enjoy window shopping when the windows are transparent.
-                        Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
-                        They decided to plant an orchard of cotton candy.
-                        The old apple revels in its authority.
-                        Everything was going so well until I was accosted by a purple giraffe.        </p>
+                        Everything was going so well until I was accosted by a purple giraffe.</p>
+                    </div>
                 </div>
                 <div class="product-image2">
                     <img src="thumbnails/thumbnail-1.webp" alt="">
                 </div>
             </div>
     </div>
-
-    
 
      <!-- Services Section -->
      <section id="services" class="services-section">
