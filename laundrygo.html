@@ -87,11 +87,9 @@
         .hero-text {
             font-size: 30px;
             margin: 0;
-            color: #ffffff;
         }
         .hero-description {
-            background-color: rgba(255, 255, 255, 0.726);
-            color:rgb(66, 65, 65);
+            background-color:#16161648;
             width: 650px;
             height: 550px;
             font-size: 25px;
@@ -100,7 +98,7 @@
             text-align: center;
             margin-left: 120px;
             align-items: center;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.5;
         }
         .view-services-btn {
@@ -125,20 +123,20 @@
             height: 1000px;
             background-color: #ffffff;
         }
-
+        .product1 {
+            display: grid;
+            grid-template-columns: 1000px 1fr ;
+        }
+        .product2{
+            display: grid;
+            grid-template-columns: 1000px 1fr ;
+        }
         .product-description-1, .product-description-2 {
             font-size: 20px;
             color: #333;
-            display: flex;
-            display: grid;
-            grid-template-columns: 1fr ;
-            justify-content: center;
             align-items: center;
             width: 700px;
-            margin-left: 120px;
-        }
-        .product-description-2 {
-            margin-left: 180px;
+            margin-left: 80px;
         }
         .product-image1 img, .product-image2 img {
             justify-content: center;
@@ -147,16 +145,13 @@
             border-radius: 10px;
             transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
         }
-        .product-image2 img {
-            margin-left: 0;
-        }
         .product-image1 img:hover, .product-image2 img:hover {
             transform: scale(1.03); 
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        .product1, .product2 {
+        .product-description-with-title{
+            margin-top: 70px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
         }
 
         /* Services Section */
@@ -205,8 +200,8 @@
                     <img src="thumbnails/thumbnail-1.webp" alt="">
                 </div>
                 <div class="product-description-1">
-                    <div class="product-description-vertical-align">
-                        <h2>Fair pricing</h2>
+                    <div class="product-description-with-title">
+                        <h2 style="margin: 0;">Fair pricing</h2>
                     <p>I only enjoy window shopping when the windows are transparent.
                         Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
                         They decided to plant an orchard of cotton candy.
@@ -217,18 +212,18 @@
             </div>
 
             <div class="product2">
+                <div class="product-image2">
+                    <img src="thumbnails/thumbnail-1.webp" alt="">
+                </div>
                 <div class="product-description-2">
-                    <div class="product-description-vertical-align">
-                        <h2>Improve quality</h2>
+                    <div class="product-description-with-title">
+                        <h2 style="margin: 0;">Improve quality</h2>
                     <p>I only enjoy window shopping when the windows are transparent.
                         Twin 4-month-olds slept in the shade of the palm tree while the mother tanned in the sun.
                         They decided to plant an orchard of cotton candy.
                         The old apple revels in its authority.
                         Everything was going so well until I was accosted by a purple giraffe.</p>
                     </div>
-                </div>
-                <div class="product-image2">
-                    <img src="thumbnails/thumbnail-1.webp" alt="">
                 </div>
             </div>
     </div>
