@@ -110,18 +110,16 @@ body {
         background-color: rgb(238, 237, 237);
     }
     .product-introduction-div {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: grid;
+        text-align: center;
+        margin-left: 500px;
+        margin-right: 550px;
+        margin-top: 70px;
     }
     .product-introduction {
         color: white;
         display: flex;
         width: 800px;;
         text-align: center;
-        justify-content: center;
         align-items: center;
         margin-top: 0;
         font-size: 20px;
@@ -167,5 +165,50 @@ body {
 
     /* About us Section */
     .about-us {
-        height: 800px;
+        height: 1500px;
+    }
+    
+    .about-us-div {
+        width: 800px;
+        margin:  auto;
+        margin-bottom: 100px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 50px;
+        margin-top: 80px;
+        color: rgb(21, 122, 117);
+        margin-bottom: 30px;
+    }
+    
+    .about-text {
+        margin: 0 auto;
+        margin-block-start: 50px;
+        font-size: 20px;
+        max-width: 800px;
+    }
+
+    .grid-icons {
+        display: flex;
+        display: grid;
+        margin-top: 20px;
+    }
+
+    .profile {
+        text-align: center;
+        margin: 50px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .icon img {
+        width: auto;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .name {
+        margin-top: 10px;
     }
