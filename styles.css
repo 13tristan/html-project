@@ -11,7 +11,7 @@ body {
         background-image: url(thumbnails/acrylic-texture-background-ocean-wallpaper.jpg);
         background-size: cover;  
         background-position: center; 
-        height:1200px;
+        height:1100px;
     }
 
     /* Header section */
@@ -33,7 +33,7 @@ body {
         margin: auto;
     }
     .brand-name:hover {
-        color: #1a4747;
+        color: white
     }
     /* Navigation */
     .navigator {
@@ -43,7 +43,6 @@ body {
     }
 
     .button-heading {
-        margin-top: 25px;
         padding: 5px;
         text-decoration: none;
         font-size: 20px;
@@ -52,7 +51,7 @@ body {
         border: none;
         font-weight: bold;
         cursor: pointer;
-        transition: color 0.3s, opacity 0.3s, font-size 0.3s;
+        transition: color 0.3s, opacity 0.3s;
     }
 
     .button-heading:hover {
@@ -108,7 +107,7 @@ body {
         display: grid;
         grid-template-rows: 650px 500px 500px;
         height: 1700px;
-        background-color: white;
+        background-color: rgb(238, 237, 237);
     }
     .product-introduction-div {
         height: auto;
@@ -118,6 +117,7 @@ body {
         display: grid;
     }
     .product-introduction {
+        color: white;
         display: flex;
         width: 800px;;
         text-align: center;
@@ -128,7 +128,8 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         border-radius: 20px;
         height: 450px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        background-color:  rgb(21, 122, 117);
+        
     }
     .product1 {
         display: grid;
@@ -140,7 +141,7 @@ body {
     }
     .product-description-1, .product-description-2 {
         font-size: 20px;
-        color: #333;
+        color: rgb(0, 0, 0);
         align-items: center;
         width: 700px;
     }
@@ -158,6 +159,7 @@ body {
 
     /* Features Section */
     .features {
+        background-color: rgb(238, 237, 237);
         height: 800px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         background-image: url(thumbnails/);
