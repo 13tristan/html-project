@@ -100,6 +100,11 @@ body {
         letter-spacing: 2px;
         cursor: pointer;
     }
+    .learn-more-btn:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(21, 122, 117);
+
+    }
 
 
     /*Product section*/
@@ -211,6 +216,7 @@ body {
     .icon img {
         width: 300px;;
         height: 300px;
+        border-radius: 200px;
     }
     .name {
         display: flex;
@@ -219,5 +225,6 @@ body {
         justify-content: center;
         align-items: center;
         font-size: 20px;
+        font-weight: bold;
 
     }
