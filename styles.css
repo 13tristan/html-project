@@ -203,12 +203,16 @@ body {
     }
 
     .profile {
+        display: flex;
         display: grid;
         text-align: center;
         justify-content: center;
         margin: 50px;
         margin-right: 50px;
         margin-left: 50px;
+    }
+    .profile:last-child {
+        grid-column: 2;
     }
 
     .icon img {
