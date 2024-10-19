@@ -4,11 +4,11 @@ body {
         margin: 0;
         padding: 0;
         scroll-behavior: smooth;
-        color: #333;
+        background-color: white;
     }
 
     .home {
-        background-image: url(thumbnails/acrylic-texture-background-ocean-wallpaper.jpg);
+        background-image: url(thumbnails/1e983f0d-e77e-4b19-b9e3-9f41cb5782e6.jpg);
         background-size: cover;  
         background-position: center; 
         height:1100px;
@@ -24,7 +24,7 @@ body {
     }
     .brand-name {
         text-decoration: none;
-        color: white;
+        color: rgb(0, 0, 0);
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
         transition: color 0.35s;
@@ -46,7 +46,7 @@ body {
         padding: 5px;
         text-decoration: none;
         font-size: 20px;
-        color: white;
+        color: black;
         background-color: transparent;
         border: none;
         font-weight: bold;
@@ -60,7 +60,7 @@ body {
 
     /* hero section */
     .hero {
-        color: #ffffff;
+        color: rgb(0, 0, 0);
         display: flex;
         display: grid;
         grid-template-columns: 1fr;
@@ -71,7 +71,7 @@ body {
     .hero-h1 {
         font-size: 80px;
         margin: 0;
-        color: #ffffff;
+        color: rgb(21, 122, 117);
     }
     .hero-text {
         font-size: 25px;
@@ -80,55 +80,57 @@ body {
     
     .hero-description {
         width: 900px;
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
         
     .learn-more-btn {
+        color: black;
         display: flex;
         justify-content: center;
         text-decoration: none;
         padding: 20px 30px;
-        margin-top: 80px;
+        margin-top: 50px;
         font-size: 15px;
         width: 150px;
         font-weight: bold;
-        color: #fff;
         border-style: solid;
         border-radius: 20px;
         transition: background-color 0.5s;
         letter-spacing: 2px;
         cursor: pointer;
     }
+    .learn-more-btn:hover {
+        background-color: rgb(21, 122, 117);
+        border-color: black;
+        color: white;
+
+    }
 
 
     /*Product section*/
     .product {
         display: grid;
+        border-bottom: 3px solid #8b8b8b;
         grid-template-rows: 650px 500px 500px;
         height: 1700px;
-        background-color: rgb(238, 237, 237);
     }
     .product-introduction-div {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: grid;
+        text-align: center;
+        margin-left: 500px;
+        margin-right: 550px;
+        margin-top: 100px;
     }
     .product-introduction {
-        color: white;
         display: flex;
         width: 800px;;
         text-align: center;
-        justify-content: center;
         align-items: center;
         margin-top: 0;
-        font-size: 20px;
+        font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         border-radius: 20px;
-        height: 450px;
-        background-color:  rgb(21, 122, 117);
+        height: 400px;
         
     }
     .product1 {
@@ -141,7 +143,7 @@ body {
     }
     .product-description-1, .product-description-2 {
         font-size: 20px;
-        color: rgb(0, 0, 0);
+        color: wh;
         align-items: center;
         width: 700px;
     }
@@ -159,7 +161,6 @@ body {
 
     /* Features Section */
     .features {
-        background-color: rgb(238, 237, 237);
         height: 800px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         background-image: url(thumbnails/);
@@ -167,5 +168,65 @@ body {
 
     /* About us Section */
     .about-us {
-        height: 800px;
+        height: 1500px;
+    }
+    
+    .about-us-div {
+        width: 800px;
+        margin:  auto;
+        margin-bottom: 100px;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .h1-about {
+        font-size: 50px;
+        margin-top: 80px;
+        color: rgb(21, 122, 117);
+        margin-bottom: 50px;
+    }
+    
+    .about-text {
+        margin: 0 auto;
+        font-size: 20px;
+        max-width: 800px;
+    }
+
+    .grid-icons {
+        display: flex;
+        display: grid;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        grid-template-columns: 400px 400px 400px;
+    }
+
+    .profile {
+        display: flex;
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        margin: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .profile:last-child {
+        grid-column: 2;
+    }
+
+    .icon img {
+        width: 300px;;
+        height: 300px;
+        border-radius: 200px;
+    }
+    .name {
+        display: flex;
+        margin-top: 10px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+
     }
