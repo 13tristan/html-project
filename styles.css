@@ -11,6 +11,7 @@ body {
         background-image: url(thumbnails/1e983f0d-e77e-4b19-b9e3-9f41cb5782e6.jpg);
         background-size: cover;  
         background-position: center; 
+        background-repeat: none;
         height:1100px;
     }
 
@@ -33,7 +34,7 @@ body {
         margin: auto;
     }
     .brand-name:hover {
-        color: white
+        color: rgb(21, 122, 117);
     }
     /* Navigation */
     .navigator {
@@ -55,7 +56,7 @@ body {
     }
 
     .button-heading:hover {
-        color: #c2c7c7;
+        color: rgb(21, 122, 117);
     }
 
     /* hero section */
@@ -159,38 +160,115 @@ body {
         display: grid;
     }
 
+        /* Features Section */
     /* Features Section */
     .features {
+        height: 2500px;
+        border-bottom: 3px solid #8b8b8b;
+        padding: 20px;
+    }
+
+    .features-div {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .h1-features{
+        font-size: 80px;
+        text-shadow: 10px 7px 10px rgb(189, 198, 197);
+        text-align: center;
+        margin-bottom: 50px;
+        color: rgb(21, 122, 117);
+    }
+    .hr-features{
+        height: 3px;
+        border-color: rgb(141, 137, 137);
+        background-color: rgb(141, 137, 137);
+        width: 1500px;
+    }
+    .p-features{
+        font-size: 25px; 
+        line-height: 30px;
+        margin: 0px 50px;
+        text-align: center;
+    }
+    .row{
+        height:300px;
+    }
+    .column {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;           
+        padding: 0 20px;   
+        margin-top: 50px;
+    }
+    .card{
         height: 800px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        background-image: url(thumbnails/);
+        width: 900px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 60px;
+        background-color: rgb(21, 122, 117);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 10px 10px 15px rgb(197, 203, 202);
+        transition: transform 0.5s;
+        font-size: 20px;
+        color: white;
+
+    }
+    
+    .feature-pic{
+        border-radius: 20px;
+        width: auto;;
+        height: 550px;
+        display: block;
+        margin: auto;
+        
+    }
+  
+    .card:hover{
+        transform: translateY(-10px);
     }
 
     /* About us Section */
     .about-us {
-        height: 1500px;
+        height: 2200px;
     }
-    
+    .about-us-bg{
+        height: 1400px;
+        background-position: center;
+    }
     .about-us-div {
-        width: 800px;
+        width: 1000px;
         margin:  auto;
         margin-bottom: 100px;
         padding: 20px;
         text-align: center;
         justify-content: center;
+        
     }
-    
     .h1-about {
-        font-size: 50px;
-        margin-top: 80px;
-        color: rgb(21, 122, 117);
-        margin-bottom: 50px;
+        font-size: 80px;
+        margin-top: 60px;
+        color: rgb(21, 122, 117);;
+        margin-bottom: 150px;
+        text-shadow: 10px 7px 10px rgb(189, 198, 197);
     }
     
     .about-text {
-        margin: 0 auto;
-        font-size: 20px;
-        max-width: 800px;
+        margin: auto;
+        font-size: 23px;
+        
     }
 
     .grid-icons {
@@ -229,4 +307,14 @@ body {
         font-size: 20px;
         font-weight: bold;
 
+    }
+    .role{
+        height: 40px;
+        font-size: 20px;  
+        margin-top: 0px;
+        background-color: rgb(190, 190, 190);
+        border-radius: 10px;
+
+        padding-top: 20px;
+        text-align: center;
     }
