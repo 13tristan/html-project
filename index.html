@@ -1,66 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dualect</title>
+</head>
+<body>
+    <div class="home">
+        <header class="header">
+            <div class="heading-brand-name">
+                  <a href="project.html" class="brand-name">dualect</a>
+            </div>
+            <nav class="navigator">
+            <a href="project.html" id="home" class="button-heading">HOME</a>
+            <a href="#product" class="button-heading">PRODUCT</a>
+            <a href="#features" class="button-heading">FEATURES</a>
+            <a href="#about-us" class="button-heading">ABOUT US</a>
+            </nav>
+        </header>
 
-    <style>
-      button {
-        margin-right: 10px;
-        height: 40px;
-        cursor: pointer;
-      }
-      .subscribe-button {
-        background-color: rgba(200, 0, 0);
-        color: white;
-        border: none;
-        width: 110px;
-        border-radius: 20px;
-        transition: opacity 0.3s;
-      }
-      .subscribe-button:hover {
-        opacity: 0.6;
-      }
-      .subscribe-button:active {
-        opacity: 0.4;
-      }
+        <div class="hero">
+            <div class="column-hero">
+                <h1 class="hero-h1">Fun and Easy to use, effective way to learn <span style="color:rgb(165, 36, 36);">cordilleran language!</span></h1>
+                <div class="hero-description">
+                    <p style="margin: 0;">
+                        Learn the native languages of the Cordillera region through interactive lessons, resources, and community engagement.</p>
+                </div>
+                <a href="#product" class="learn-more-btn">LEARN MORE</a>
+            </div>
+            <div class="column-hero">
+                <img class="logo" src="./icons/DualectLogo.png" alt="Dualect Logo">
+            </div>
+        </div>
+    </div>
 
-      .join-button {
-        background-color: rgb(255, 255, 255);
-        color: rgb(41, 118, 211);
-        width: 65px;
-        border-color: rgb(41, 118, 211);
-        border-style: solid;
-        border-radius: 2px;
-        transition: background-color 0.5s, color 0.5s;
-      }
-      .join-button:hover {
-        background-color: rgb(41, 118, 211);
-        color: white;
-      }
+    <div id = "product"class="product-section">
+        <div class="row">
+            <div class="column1-product">
+                <img class="dualect-bg" src="./icons/Dualect-pic.png">
+            </div>
+            <div class="column2-product">
+                <h1 class="h1-product">Welcome to <span style="font-size: 55px; font-family: 'Segoe UI';">Dualect App</span></h1>
+                <p class="product-description">Implement reality technologies such as virtual reality/augmented reality in order for the user to visualize contexts that are related to that language (when introducing the cultural aspect of that language, for example the word “Panagbenga Festival” the user would be given context by the VR that the festival is the “Season of Blooming” informing the user information about the culture). Another example is AR could be use to overlay objects, let us say when a user points their device on an object then the app displays the word for that object and shows the word in what specific dialect you want. </p>
+                <p class="product-description">The idea could also use AI-driven chatbot that mimics real conversations in the language or dialect, allowing the users or learners to practice fluency. This will also support feedback on sentence structure, grammar and pronunciation</p>
+            </div>
+        </div>
+    </div>
 
-      .tweet-button {
-        background-color: rgba(21, 138, 234, 0.944);
-        color: white;
-        width: 75px;
-        border-style: none;
-        border-radius: 20px;
-        font-weight: bold;
-        transition: opacity 0.3s;
-        transition: box-shadow 0.5s;
-      }
-      .tweet-button:hover {
-        box-shadow: 2px 5px 12px rgb(194, 197, 197);
-      }
-      .tweet-button:active {
-        opacity: 0.5;
-      }
-    </style>
-  </head>
-  <body>
-    <button class="subscribe-button">SUBSCRIBE</button>
-    <button class="join-button">JOIN</button>
-    <button class="tweet-button">Tweet</button>
-  </body>
+     <div id="features" class="features">
+        <div class="features-div">
+            <h1 class="h1-features">Key Features</h1>  
+        </div>
+        <div class="out-box">
+            <h1 class="text-features">Language Resources</h1>
+                <div class="column-boxes1">
+                    <div class="box">
+                    <div class="box-inside">
+                        <h1 class="numbers">01</h1>
+                        <h2 class="h2-features">Dictionary & Vocabulary</h2>
+                        <hr class="hr-features">
+                        <p class="p-features">A comprehensive dictionary for various languages/dialects of the Cordillera (e.g., Kankanaey, Ibaloi, Ifugao, Bontoc, etc.). Include audio pronunciations, common phrases, and translations.</p>
+                    </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">02</h1>
+                            <h2 class="h2-features">Grammar Guides</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">Simple grammar explanations with examples and interactive exercises.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-inside">
+                                <h1 class="numbers">03</h1>
+                                <h2 class="h2-features">Cultural Context</h2>
+                                <hr class="hr-features">
+                                <p class="p-features">Explanations of how language ties to cultural practices, rituals, and beliefs specific to each language group.</p>
+                            </div>
+                            </div>
+                </div>
+            <h1 class="text-features">Audio & Video Lessons</h1>
+                <div class="column-boxes1">
+                    <div class="box">
+                    <div class="box-inside">
+                        <h1 class="numbers">04</h1>
+                        <h2 class="h2-features">Learn by Listening</h2>
+                        <hr class="hr-features">
+                        <p class="p-features">Audio recordings by native speakers for language immersion (pronunciation, intonation, and conversational practice).</p>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div class="box-inside">
+                            <h1 class="numbers">05</h1>
+                            <h2 class="h2-features">Video Lessons</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">Native speakers teaching common phrases, greetings, and storytelling.</p>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div class="box-inside">
+                                <h1 class="numbers">06</h1>
+                                <h2 class="h2-features">Interactive Quizzes</h2>
+                                <hr class="hr-features">
+                                <p class="p-features">After lessons, users can take quizzes to reinforce their learning.</p>
+                    </div>
+                    </div>
+                </div>
+                <h1 class="text-features">Storytelling Hub</h1>
+                    <div class="column-boxes1">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">07</h1>
+                            <h2 class="h2-features">Traditional Stories & Folklore</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">Collection of oral traditions, myths, and legends in their native language with audio narration and translations.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                <h1 class="numbers">08</h1>
+                                <h2 class="h2-features">User-Generated Content</h2>
+                                <hr class="hr-features">
+                                <p class="p-features">A platform where users can upload their own stories or songs in their mother tongue.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                    <h1 class="numbers">09</h1>
+                                    <h2 class="h2-features">Cultural Heritage</h2>
+                                    <hr class="hr-features">
+                                    <p class="p-features">Articles and documentaries about the history, art, and traditions of the Cordillera region.</p>
+                        </div>
+                        </div>
+                    </div>
+                <h1 class="text-features">Language Community</h1>
+                    <div class="column-boxes2">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">10</h1>
+                            <h2 class="h2-features">Forums & Discussion Groups</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">A place for speakers and learners to connect, share language tips, and ask questions.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                <h1 class="numbers">11</h1>
+                                <h2 class="h2-features">Language Exchange</h2>
+                                <hr class="hr-features">
+                                <p class="p-features">A feature that pairs learners with native speakers for conversational practice.</p>
+                        </div>
+                        </div>
+                    </div>
+                <h1 class="text-features">Events & News</h1>
+                    <div class="column-boxes2">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">12</h1>
+                            <h2 class="h2-features">Language Workshops</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">Notifications about workshops, events, or cultural festivals related to language preservation.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                <h1 class="numbers">13</h1>
+                                <h2 class="h2-features">Cultural Events</h2>
+                                <hr class="hr-features">
+                                <p class="p-features">Updates on local cultural events and celebrations that highlight language use.</p>
+                        </div>
+                        </div>
+                    </div>
+                <h1 class="text-features">Offline Mode</h1>
+                    <div class="column-boxes2">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">14</h1>
+                            <h2 class="h2-features">Offline Access</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">Downloadable content so users can access materials without needing internet connectivity, useful in remote areas.</p>
+                        </div>
+                        </div>
+                    </div>
+                <h1 class="text-features">Interactive Language Games</h1>
+                    <div class="column-boxes2">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">15</h1>
+                            <h2 class="h2-features">Word Match & Memory Games</h2>
+                            <hr class="hr-features">
+                            <p class="p-features"> Fun games designed to help users expand their vocabulary and improve retention.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                <h1 class="numbers">16</h1>
+                                <h2 class="h2-features">Language Puzzles</h2>
+                                <hr class="hr-features">
+                                <p class="p-features">Crossword or word-search puzzles using terms from the native languages.</p>
+                        </div>
+                        </div>
+                    </div>
+                <h1 class="text-features">Technology Considerations</h1>
+                    <div class="column-boxes1">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">17</h1>
+                            <h2 class="h2-features">Voice Recognition</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">For pronunciation feedback to ensure users are saying words correctly.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                <h1 class="numbers">18</h1>
+                                <h2 class="h2-features">Gamification</h2>
+                                <hr class="hr-features">
+                                <p class="p-features"> To make learning more engaging, offer rewards or progress badges.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                    <h1 class="numbers">19</h1>
+                                    <h2 class="h2-features">Multilingual Interface</h2>
+                                    <hr class="hr-features">
+                                    <p class="p-features">The app could be available in Filipino/English with an option to toggle between different mother tongues.</p>
+                        </div>
+                        </div>
+                    </div>
+                <h1 class="text-features">Target Audience</h1>
+                    <div class="column-boxes1">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">20</h1>
+                            <h2 class="h2-features">Native speakers</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">Young people who want to reconnect with or strengthen their knowledge of their mother tongue.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                <h1 class="numbers">21</h1>
+                                <h2 class="h2-features">Language learners</h2>
+                                <hr class="hr-features">
+                                <p class="p-features">Non-native speakers or younger generations who wish to learn and preserve the languages.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                    <h1 class="numbers">22</h1>
+                                    <h2 class="h2-features">Cultural Enthusiasts</h2>
+                                    <hr class="hr-features">
+                                    <p class="p-features"> People interested in the diverse cultures of the Cordillera.</p>
+                        </div>
+                        </div>
+                    </div>
+                <h1 class="text-features">Monetization Ideas</h1> 
+                    <div class="column-boxes1">
+                        <div class="box">
+                        <div class="box-inside">
+                            <h1 class="numbers">23</h1>
+                            <h2 class="h2-features">In-App Purchases</h2>
+                            <hr class="hr-features">
+                            <p class="p-features">Offer premium lessons, advanced content, or exclusive stories.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                <h1 class="numbers">24</h1>
+                                <h2 class="h2-features">Ad-Free Version</h2>
+                                <hr class="hr-features">
+                                <p class="p-features"> Provide an ad-free subscription option for users.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <div class="box-inside">
+                                    <h1 class="numbers">25</h1>
+                                    <h2 class="h2-features">Partnerships</h2>
+                                    <hr class="hr-features">
+                                    <p class="p-features">Partner with local organizations or cultural groups for funding or content development.</p>
+                        </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <div id="about-us" class="about-us">
+        <div class="about-us-bg">
+        <div class="about-us-div">
+            <h1 class="h1-about">About Us</h1>
+            <div>
+                <p class="about-text">We are a team dedicated to preserving and promoting the native languages of the Cordillera region. Our mission is to make these languages accessible to everyone, from learners to native speakers, and to help enhance language learning in schools through interactive resources and cultural engagement.</p>
+            </div>
+        </div>
+
+        <div class="grid-icons">
+            <div class="profile">
+                <div class="icon">
+                    <img src="icons/Portrait_Placeholder.png" alt="">
+                </div>
+                <div class="name">
+                    <p>Salvador Balagbag </p>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="icon">
+                    <img src="icons/Portrait_Placeholder.png" alt="">
+                </div>
+                <div class="name">
+                    <p>Rogiane Cascolan Olinda</p>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="icon">
+                    <img src="icons/Portrait_Placeholder.png" alt="">
+                </div>
+                <div class="name">
+                    <p>Dhel Angelic Maducdoc</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="icon">
+                    <img src="icons/Portrait_Placeholder.png" alt="">
+                </div>
+                <div class="name">
+                    <p>Mercedes Jade Lopez</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="icon">
+                    <img src="icons/Portrait_Placeholder.png" alt="">
+                </div>
+                <div class="name">
+                    <p>Nicole Bendoy</p>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="icon">
+                    <img src="icons/Portrait_Placeholder.png" alt="">
+                </div>
+                <div class="name">
+                    <p>Tristan Januey Orpilla</p>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="icon">
+                    <img src="icons/Portrait_Placeholder.png" alt="">
+                </div>
+                <div class="name">
+                    <p>Carlos Aquino</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>   
+</body>
 </html>
