@@ -17,19 +17,21 @@ body {
 
     /* Header section */
     .header {
+        background-color: rgb(165, 36, 36);
         align-items: center;
         padding: 20px;
         display: flex;
         display: grid;
+        height: 70px;
         grid-template-columns: 1150px 1fr;
     }
     .brand-name {
         text-decoration: none;
-        color: rgb(46, 192, 66);
-        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         transition: color 0.35s;
-        font-size: 50px;
+        font-size: 40px;
         cursor: pointer;
         margin-left: 120px;
     }
@@ -37,14 +39,14 @@ body {
     .navigator {
         display: flex;
         display: grid;
-        grid-template-columns: 140px 170px 170px 170px;
+        grid-template-columns: 170px 170px 170px 170px;
     }
 
     .button-heading {
         padding: 5px;
         text-decoration: none;
         font-size: 20px;
-        color: black;
+        color: rgb(255, 255, 255);
         background-color: transparent;
         border: none;
         font-weight: bold;
@@ -57,11 +59,20 @@ body {
     .hero {
         color: rgb(0, 0, 0);
         display: flex;
-        display: grid;
+        /*display: grid;*/
         grid-template-columns: 1fr;
         justify-content: center; 
         margin-left: 150px;
         margin-top: 250px;
+    }
+    .column-hero{
+        flex-basis: 50%;
+        margin: 0px;
+    }
+    .logo{
+        width: 800px;
+        text-align: center;
+        margin-top: 0;
     }
     .hero-h1 {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,7 +110,7 @@ body {
         cursor: pointer;
     }
     .learn-more-btn:hover {
-        background-color: rgb(46, 192, 66);
+        background-color: rgb(165, 36, 36);
         border-color: black;
         color: white;
 
@@ -110,102 +121,128 @@ body {
     .product-section {
         display: grid;
         border-bottom: 3px solid #8b8b8b;
-        height: 1700px;
+        /*height: 1700px;*/
+        height: auto;
+        background-image: url(./thumbnails/bg-dualect.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
-    .product-introduction-div {
-        font-size: 20px;
-        color: rgb(53, 53, 53);
+    .row{
+        margin: 100px;
+        margin-left: 80px;
+        display: flex;
+        flex-basis: 50%;
+    }
+    .column1-product{
+        flex-basis: 40%;
+        /*border: solid;*/
+    }
+    .column2-product{
+        flex-basis: 55%;
+        /*border: solid;*/
+    }
+    
+    .h1-product{
         text-align: center;
-        margin-left: 500px;
-        margin-right: 550px;
-        margin-top: 100px;
+        color: rgb(226, 226, 226);
+        font-size: 45px;
+        font-family:'Lucida Sans';
+        margin-bottom: 80px;
+    }
+    .product-description{
+        text-align: justify;
+        text-indent: 50px;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 50px 0px;
+    }
+    .dualect-bg{
+        width: 400px;
+        margin: auto;
+        margin-right: 100px;
     }
 
 
     /* Features Section */
     .features {
-        height: 2500px;
+        /*height: 2500px;*/
+        height: auto;
         border-bottom: 3px solid #8b8b8b;
         padding: 20px;
-    }
-
-    .features-div {
-        height: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
+        
+    }
+    .features-div{
     }
     .h1-features{
-        font-size: 80px;
         text-align: center;
-        margin-bottom: 50px;
-        color: rgb(21, 122, 117);
+        color:rgb(165, 36, 36);
+        font-size: 80px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .text-features{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    .out-box{
+        margin-top: 10px;
+    }
+    .column-boxes1{
+        width: 1500px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .column-boxes2{
+        width: 1000px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .box{
+        background-color:rgb(133, 46, 46);
+        width: 400px;
+        height: 300px;
+        background-size: cover;
+        margin: 20px;
+    }
+    .box-inside{
+        width: 400px;
+        height: 300px;
+        background-size: cover;
+        margin: 50px auto;
+    
     }
     .hr-features{
-        height: 3px;
-        border-color: rgb(141, 137, 137);
-        background-color: rgb(141, 137, 137);
-        width: 1500px;
+        width: 380px;
     }
     .p-features{
-        font-size: 25px; 
-        line-height: 30px;
-        margin: 0px 50px;
-        text-align: center;
-    }
-    .row {
-        height: 400px;
-    }
-    .column {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;           
-        padding: 0 20px;   
-        margin-top: 50px;
-    }
-    .card{
-        height: 800px;
-        width: 900px;
-        display: inline-block;
-        border-radius: 10px;
-        padding: 15px 25px;
-        box-sizing: border-box;
-        cursor: pointer;
-        margin: 60px;
-        background-color: rgb(21, 122, 117);
-        text-align: center;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 10px 10px 15px rgb(197, 203, 202);
-        transition: transform 0.5s;
+        margin: 10px;
         font-size: 20px;
-        color: white;
-
+        text-align: center;
+        color: rgb(226, 226, 226);
     }
-    
-    .feature-pic{
-        border-radius: 20px;
-        width: auto;;
-        height: 550px;
-        display: block;
+    .numbers, .h2-features{
+        text-align: center;
+        color: aliceblue;
+    }
+    .h2-features{
+        margin: auto;
+        font-size: 30px;
+    }
+    .numbers{
+        font-size: 45px;
         margin: auto;
         
     }
-  
-    .card:hover{
-        transform: translateY(-10px);
-    }
-
     /* About us Section */
     .about-us {
         height: 2200px;
-    }
-    .about-us-bg{
-        height: 1400px;
-        background-position: center;
     }
     .about-us-div {
         width: 1000px;
@@ -219,7 +256,6 @@ body {
     .h1-about {
         font-size: 80px;
         margin-top: 60px;
-        color: rgb(21, 122, 117);;
         margin-bottom: 40px;
     }
     
@@ -236,6 +272,9 @@ body {
         margin-bottom: 20px;
         justify-content: center;
         grid-template-columns: 400px 400px 400px;
+    }
+    .column-about{
+        display: flex;
     }
 
     .profile {
